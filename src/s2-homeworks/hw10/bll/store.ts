@@ -1,9 +1,11 @@
+import { themeReducer } from '../../hw12/bll/themeReducer'
 import { loadingReducer } from './loadingReducer'
 import { combineReducers, legacy_createStore } from 'redux'
 
 
 const reducers = combineReducers({
     loading: loadingReducer, // hw10
+    theme: themeReducer
 
 })
 

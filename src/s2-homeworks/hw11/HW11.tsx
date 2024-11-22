@@ -28,6 +28,7 @@ function HW11() {
         }
         
     }
+    //  git add . git commit -m 'dddd' git push npm run deploy
 
     return (
         <div id={'hw11'}>
