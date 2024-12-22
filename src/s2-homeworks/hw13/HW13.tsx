@@ -48,12 +48,14 @@ const HW13 = () => {
                 // setImage(e.response.status === 400 ? error400 : e.response.status === 500 ? error500 : errorUnknown)
                 // setText(e.response.data.errorText)
                 // setInfo(e.response.data.info)
-                if(e.code === 'ERR_NETWORK'){
-                    setCode(e.code + '!')
-                    setImage(errorUnknown)
-                    setText(e.message)
-                    setInfo(e.name)
-                }
+                console.log(e);
+                
+                // if(e.code === 'ERR_NETWORK'){
+                //     setCode(e.code + '!')
+                //     setImage(errorUnknown)
+                //     setText(e.message)
+                //     setInfo(e.name)
+                // }
 
                 if(e.response?.status === 400){
                     setCode(e.response.status + '!')
