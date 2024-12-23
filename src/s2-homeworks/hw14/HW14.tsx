@@ -5,6 +5,7 @@ import axios from 'axios'
 import SuperDebouncedInput from './common/c8-SuperDebouncedInput/SuperDebouncedInput'
 import {useSearchParams} from 'react-router-dom'
 
+
 /*
 * 1 - дописать функцию onChangeTextCallback в SuperDebouncedInput
 * 2 - дописать функцию sendQuery в HW14
@@ -24,7 +25,9 @@ const getTechs = (find: string) => {
         })
 }
 
+
 const HW14 = () => {
+    
     const [find, setFind] = useState('')
     const [isLoading, setLoading] = useState(false)
     const [searchParams, setSearchParams] = useSearchParams()
@@ -42,9 +45,8 @@ const HW14 = () => {
     const onChangeText = (value: string) => {
         setFind(value)
         setSearchParams(value ? {find: value} : {})
+        // sendQuery(value)
 
-        
-        sendQuery(value)
         
     }
 
